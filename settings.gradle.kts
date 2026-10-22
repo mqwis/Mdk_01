@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "PZ_6"
 include(":app")
+include(":app")
+ 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CapsuleButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/neon_blue</item>
+        <item name="android:backgroundTint">@color/glass_bg</item>
+        <item name="android:maxLines">1</item>
+    </style>
+</resources>

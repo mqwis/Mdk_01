@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="48dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOW PLAYING"
+            android:textColor="#B3B3B3"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:text="♪"
+            android:textColor="#1DB954"
+            android:textSize="72sp"
+            android:background="#282828"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/tvTrack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unknown Track"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SYSTEM READY"
+            android:textColor="#B3B3B3"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressTint="#1DB954"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnRaw"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="▶  PLAY RAW"
+            android:textColor="#000000"
+            android:backgroundTint="#1DB954"
+            android:onClick="onClickStart"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnHttp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="HTTP"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#282828"
+            android:onClick="onClickStart"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnStream"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="STREAM"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#282828"
+            android:onClick="onClickStart"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="PAUSE"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/btnResume"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="PLAY"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="STOP"
+                android:onClick="onClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnBackward"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="BACK"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/btnForward"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="FWD"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="INFO"
+                android:onClick="onClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSd"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="SD"
+                android:onClick="onClickStart" />
+
+            <Button
+                android:id="@+id/btnUri"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="URI"
+                android:onClick="onClickStart" />
+
+            <CheckBox
+                android:id="@+id/chbLoop"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="LOOP"
+                android:textColor="#FFFFFF"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
